@@ -24,6 +24,8 @@ function run() {
   let input = document.getElementById("key");
   let team1score = 0;
   let team2score = 0;
+  document.getElementById("t1").innerHTML = "loading...";
+  document.getElementById("t2").innerHTML = "loading...";
 
   function getData(object) {
     const apiUrl = `${url}${object.type}/Profile/${object.id}?components=1100`;
