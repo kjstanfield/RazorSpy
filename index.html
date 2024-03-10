@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RazorSpy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <input type="text" id="key" name="key" />
+        <button onclick="run()">Submit</button>
+      </div>
+      <div id="scores">
+        <div class="main t1">
+          Team 1 Score: <span id="t1" class="score">-</span>
+        </div>
+        <div class="main t2">
+          Team 2 Score: <span id="t2" class="score">-</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
