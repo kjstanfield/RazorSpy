@@ -56,6 +56,8 @@ const allTeams = [
 
 function run() {
   let input = document.getElementById("key");
+  console.log(`NEW RUN`);
+  console.log(``);
 
   if (input.value == null || input.value == "") {
     console.log("No Key");
@@ -93,8 +95,7 @@ function run() {
 
     Promise.all(team.map((object) => getData(object)))
       .then((results) => {
-        console.log(`
-        ------ ${currentTeam} ------`);
+        console.log(`------ ${currentTeam} ------`);
         results.forEach((player, i) => {
           let curScore =
             player.Response.metrics.data.metrics[2330926603].objectiveProgress
