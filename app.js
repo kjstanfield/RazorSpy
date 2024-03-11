@@ -94,8 +94,7 @@ function run() {
     Promise.all(team.map((object) => getData(object)))
       .then((results) => {
         console.log(`
-        *------ ${currentTeam} ------*
-        `);
+        ------ ${currentTeam} ------`);
         results.forEach((player, i) => {
           let curScore =
             player.Response.metrics.data.metrics[2330926603].objectiveProgress
