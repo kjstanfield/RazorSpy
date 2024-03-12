@@ -17,7 +17,6 @@ const allTeams = [
     { type: "1", id: "4611686018429879860", name: "AsianSpecialist" },
     { type: "1", id: "4611686018432622059", name: "Grizzly" },
   ],
-
   [
     { type: "1", id: "4611686018429860638", name: "Sherpa Mind" },
     { type: "1", id: "4611686018429810474", name: "BonaFideHiro" },
@@ -26,7 +25,6 @@ const allTeams = [
     { type: "1", id: "4611686018433084550", name: "Mm2mmrimmer" },
     { type: "1", id: "4611686018429541409", name: "Jarv" },
   ],
-
   [
     { type: "1", id: "4611686018473082405", name: "Miss" },
     { type: "2", id: "4611686018473387231", name: "Fangz" },
@@ -34,7 +32,6 @@ const allTeams = [
     { type: "1", id: "4611686018451363932", name: "ShieldMaiden" },
     { type: "3", id: "4611686018484174236", name: "TechStomper" },
   ],
-
   [
     { type: "2", id: "4611686018512016613", name: "Mytho" },
     { type: "1", id: "4611686018433696774", name: "Shadowstep" },
@@ -43,7 +40,6 @@ const allTeams = [
     { type: "1", id: "4611686018461669902", name: "Cryo" },
     { type: "1", id: "4611686018464050897", name: "Caracals" },
   ],
-
   [
     { type: "1", id: "4611686018430246885", name: "Qanzmoto" },
     { type: "3", id: "4611686018496005145", name: "HarDJunk" },
@@ -51,6 +47,14 @@ const allTeams = [
     { type: "1", id: "4611686018445376126", name: "Instinct" },
     { type: "3", id: "4611686018495414673", name: "Kalista" },
     { type: "2", id: "4611686018458773501", name: "Cirisly" },
+  ],
+  [
+    { type: "1", id: "4611686018488188877", name: "Psalms" },
+    { type: "1", id: "4611686018432535713", name: "GoofyGoose" },
+    { type: "3", id: "4611686018513091271", name: "Mufzu" },
+    { type: "3", id: "4611686018503530307", name: "Ruby" },
+    { type: "1", id: "4611686018444819810", name: "Arb" },
+    { type: "1", id: "4611686018444807257", name: "Chief" },
   ],
 ];
 
