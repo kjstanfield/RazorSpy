@@ -147,7 +147,11 @@ function run() {
           score = score + curScore;
           daily = daily + dailyScore1 + dailyScore2 + dailyScore3;
 
-          console.log(`${team[i].name} -> ${curScore} | ${dailyScore}`);
+          console.log(
+            `${team[i].name} -> ${curScore} | ${
+              dailyScore1 + dailyScore2 + dailyScore3
+            }`
+          );
         });
         scoreDisplay.innerHTML = score;
         dailyDisplay.innerHTML = daily;
