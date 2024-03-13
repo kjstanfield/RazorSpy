@@ -70,9 +70,9 @@ function sortTable() {
       shouldSwitch = false;
       x = rows[i].getElementsByTagName("TD")[1];
       y = rows[i + 1].getElementsByTagName("TD")[1];
-      console.log("x", x);
-      console.log("y", y);
-      if (Number(x.innerHTML) > Number(y.innerHTML)) {
+      console.log("x", x.innerText);
+      console.log("y", y.innerText);
+      if (Number(x.innerText) > Number(y.innerText)) {
         shouldSwitch = true;
         break;
       }
