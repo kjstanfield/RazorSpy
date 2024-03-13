@@ -132,12 +132,20 @@ function run() {
             player.Response.metrics.data.metrics[2330926603].objectiveProgress
               .progress;
 
-          let dailyScore =
+          let dailyScore1 =
             player.Response.metrics.data.metrics[2871558814].objectiveProgress
               .progress;
 
+          let dailyScore2 =
+            player.Response.metrics.data.metrics[3290789770].objectiveProgress
+              .progress;
+
+          let dailyScore3 =
+            player.Response.metrics.data.metrics[3738124663].objectiveProgress
+              .progress;
+
           score = score + curScore;
-          daily = daily + dailyScore;
+          daily = daily + dailyScore1 + dailyScore2 + dailyScore3;
 
           console.log(`${team[i].name} -> ${curScore} | ${dailyScore}`);
         });
