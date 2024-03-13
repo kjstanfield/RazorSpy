@@ -5,7 +5,7 @@ const allTeams = [
     { type: "3", id: "4611686018482605597", name: "Butters" },
     { type: "1", id: "4611686018456289666", name: "Frzn" },
     { type: "3", id: "4611686018472105534", name: "Razorcut" },
-    { type: "3", id: "4611686018468117711", name: "Ksetcs" },
+    { type: "3", id: "4611686018468117711", name: "Kstecs" },
     { type: "3", id: "4611686018504800722", name: "Apple_64" },
     { type: "1", id: "4611686018430872228", name: "Reopss" },
   ],
