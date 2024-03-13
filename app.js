@@ -59,6 +59,7 @@ const allTeams = [
 ];
 
 function sortTable() {
+  console.log("-Start Sort-");
   var table, rows, switching, i, x, y, shouldSwitch;
   table = document.getElementById("scoreTable");
   switching = true;
@@ -70,7 +71,7 @@ function sortTable() {
       shouldSwitch = false;
       x = rows[i].getElementsByTagName("TD")[1];
       y = rows[i + 1].getElementsByTagName("TD")[1];
-      if (parseInt(x.innerHTML) > parseInt(y.innerHTML)) {
+      if (Number(x.innerHTML) > Number(y.innerHTML)) {
         shouldSwitch = true;
         break;
       }
@@ -80,6 +81,7 @@ function sortTable() {
       switching = true;
     }
   }
+  console.log("-Stop Sort-");
 }
 
 function run() {
