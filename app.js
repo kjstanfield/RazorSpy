@@ -60,7 +60,7 @@ const allTeams = [
 
 function sortTable() {
   var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("scoreTable");
+  table = document.getElementById("score-table");
   switching = true;
 
   while (switching) {
@@ -118,8 +118,11 @@ function run() {
 
   function getScores(team, count) {
     let score = 0;
+    let daily = 0;
     let currentTeam = `team${count}`;
+    let currentDaily = `team${count}d`;
     let scoreDisplay = document.getElementById(currentTeam);
+    let dailyDisplay = document.getElementById(currentDaily);
 
     Promise.all(team.map((object) => getData(object)))
       .then((results) => {
@@ -128,10 +131,18 @@ function run() {
           let curScore =
             player.Response.metrics.data.metrics[2330926603].objectiveProgress
               .progress;
+
+          let dailyScore =
+            player.Response.metrics.data.metrics[2871558814].objectiveProgress
+              .progress;
+
           score = score + curScore;
-          console.log(`${team[i].name} -> ${curScore}`);
+          daily = daily + dailyScore;
+
+          console.log(`${team[i].name} -> ${curScore} | ${dailyScore}`);
         });
         scoreDisplay.innerHTML = score;
+        dailyDisplay.innerHTML = daily;
         sortTable();
       })
       .catch((error) => {
