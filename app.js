@@ -56,6 +56,12 @@ const allTeams = [
     { type: "1", id: "4611686018444819810", name: "Arb" },
     { type: "1", id: "4611686018444807257", name: "Chief" },
   ],
+  [
+    { type: "2", id: "4611686018467231895", name: "Star" },
+    { type: "2", id: "4611686018452198767", name: "Wolfy" },
+    { type: "2", id: "4611686018457261703", name: "Percs2F" },
+    { type: "1", id: "4611686018433914238", name: "Arladouc" },
+  ],
 ];
 
 function sortTable() {
@@ -82,15 +88,24 @@ function sortTable() {
   }
 }
 
+function gradient() {
+  let rows = document.getElementsByClassName("row");
+
+  for (i = 0; i < rows.length; i++) {
+    rows[i].className = "row";
+    rows[i].classList.add(`t${i + 1}`);
+  }
+}
+
 function run() {
   let input = document.getElementById("key");
-  console.log(`NEW RUN`);
-  console.log(``);
 
   if (input.value == null || input.value == "") {
     console.log("No Key");
     return;
   }
+  console.log(`NEW RUN`);
+  console.log(``);
 
   input.classList.add("hidden");
   let loadedScores = document.getElementsByClassName("score");
@@ -156,6 +171,7 @@ function run() {
         scoreDisplay.innerHTML = score;
         dailyDisplay.innerHTML = daily;
         sortTable();
+        gradient();
       })
       .catch((error) => {
         console.error("Error:", error);
