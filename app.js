@@ -46,7 +46,7 @@ const allTeams = [
     { type: "2", id: "4611686018443998952", name: "Lover" },
     { type: "1", id: "4611686018445376126", name: "Instinct" },
     { type: "3", id: "4611686018495414673", name: "Kalista" },
-    { type: "2", id: "4611686018458773501", name: "Cirisly" },
+    { type: "1", id: "4611686018430161150", name: "Kenner" },
   ],
   [
     { type: "1", id: "4611686018488188877", name: "Psalms" },
